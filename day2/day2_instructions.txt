@@ -1,0 +1,39 @@
+Day 2: Python Core - Data Structures
+
+Objective:
+Learn about Python's core data structures (strings, lists, tuples, sets, dicts), list comprehensions, lambda functions, and iteration patterns. Practice by reading a CSV file and filtering data using a list comprehension.
+
+Steps:
+
+1. Prepare a CSV file:
+   - Create `students.csv` in the `day2` folder with columns: name, age.
+   - Example content:
+     name,age
+     Alice,17
+     Bob,19
+     Charlie,20
+     Diana,16
+     Eve,22
+
+2. Read the CSV file in Python:
+   - Use the built-in `csv` module to read rows as dictionaries.
+   - Store each student as a dictionary in a list.
+
+3. Use a list comprehension to filter students:
+   - Extract names of students older than 18 in a single line.
+   - Example: `[student['name'] for student in students if student['age'] > 18]`
+
+4. Print the result:
+   - Output the names of students older than 18.
+
+Understanding:
+- **Lists** store ordered data; **dicts** store key-value pairs.
+- **List comprehensions** provide a concise way to filter and transform lists.
+- **csv.DictReader** makes it easy to work with CSV data as dictionaries.
+
+You can run the script with:
+```
+python day2/students_over_18.py
+```
+
+This will print the names of students older than 18, demonstrating data reading, filtering, and iteration in Python.
