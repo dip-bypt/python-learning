@@ -1,0 +1,33 @@
+Day 1: Python Setup & Environment - Instructions
+
+Objective:
+Set up a Python development environment, create a virtual environment, install essential libraries, and verify the setup by printing the Python version and listing installed packages.
+
+Steps:
+
+1. Install Python 3.11 or higher:
+   - Download from https://www.python.org/downloads/
+   - Verify installation: `python3 --version`
+
+2. Create a project folder and navigate into it:
+   - Example: `mkdir python-learning && cd python-learning`
+
+3. Create a virtual environment named `ai-env`:
+   - Command: `python3 -m venv ai-env`
+   - Activate (macOS/Linux): `source ai-env/bin/activate`
+   - Activate (Windows): `ai-env\Scripts\activate`
+
+4. Install required libraries:
+   - Command: `pip install fastapi uvicorn pandas`
+
+5. Create and run the script to verify setup:
+   - Save the provided `python_env_info.py` script in the `day1` folder.
+   - Run: `python python_env_info.py`
+   - This will print your Python version and list all installed packages in your environment.
+
+Understanding:
+- Virtual environments isolate project dependencies, preventing conflicts.
+- `pip` is used to install and manage Python packages.
+- The script uses `platform` and `pkg_resources` to display environment details.
+
+You are now ready to start Python development with a clean, isolated environment!

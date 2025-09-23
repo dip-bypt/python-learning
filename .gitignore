@@ -1,1 +1,44 @@
+# Byte-compiled / optimized / DLL filesai-env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
 ai-env/
+.venv/
+venv/
+ENV/
+
+# VS Code settings
+.vscode/
+
+# MacOS system files
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Test and coverage outputs
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+
+# PyInstaller
+*.manifest
+*.spec
+
+dist/
+build/
+
+# Logs
+*.log
+
+# Misc
+*.swp
+*.swo
