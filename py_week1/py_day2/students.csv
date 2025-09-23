@@ -1,0 +1,11 @@
+studentId,name,age,grade,email
+S001,Alice Johnson,20,A,alice.johnson@example.com
+S002,Bob Smith,22,B,bob.smith@example.com
+S003,Charlie Brown,21,A,charlie.brown@example.com
+S004,Diana Prince,13,C,diana.prince@example.com
+S005,Ethan Hunt,20,B,ethan.hunt@example.com
+S006,Fiona Gallagher,22,A,fiona.gallagher@example.com
+S007,George Miller,15,B,george.miller@example.com
+S008,Hannah Lee,19,A,hannah.lee@example.com
+S009,Ian Somerhalder,18,C,ian.somerhalder@example.com
+S010,Julia Roberts,16,B,julia.roberts@example.com
