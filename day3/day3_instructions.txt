@@ -1,0 +1,28 @@
+Day 3: Working with APIs and Dynamic Data
+
+Objective:
+Learn how to fetch weather data for any location using an API, process JSON data, and make your code dynamic for user input.
+
+Steps:
+1. Understand the Open-Meteo API:
+   - The API provides weather data for any latitude and longitude.
+   - Example endpoint: https://api.open-meteo.com/v1/forecast?latitude=LAT&longitude=LON&current=temperature_2m,relative_humidity_2m
+
+2. Make your code dynamic:
+   - Allow the user to input a city name or coordinates.
+   - Use a geocoding API (like Open-Meteo's geocoding or Nominatim) to convert city names to latitude and longitude.
+   - Fetch and display temperature and humidity for the chosen location.
+
+3. Save and read JSON data:
+   - Store the API response in a JSON file.
+   - Read the file and extract temperature and humidity.
+
+4. Handle errors gracefully:
+   - Check for network, API, or data errors and inform the user.
+
+Understanding:
+- APIs allow you to access real-time data from the internet.
+- JSON is a common format for data exchange in web APIs.
+- Making your code dynamic and user-driven is a key programming skill.
+
+Run the script and enter any city to get its current temperature and humidity!
