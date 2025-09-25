@@ -1,0 +1,31 @@
+Day 4: Building a Simple REST API with FastAPI
+
+Objective:
+Learn how to create and extend a REST API using FastAPI. Practice handling POST and GET requests, working with request bodies, and managing in-memory data.
+
+Tasks:
+1. Extend the API:
+   - POST /user: Accepts a JSON body with {name, age} and stores the user in memory.
+   - GET /user/{name}: Returns user info if the user exists, otherwise returns an error message.
+
+Steps:
+- Define a Pydantic model for user data (name, age).
+- Use a Python dictionary to store users in memory.
+- Implement POST and GET endpoints as described.
+- Test the API using curl, httpie, or a tool like Postman.
+
+Understanding:
+- FastAPI makes it easy to build APIs with automatic data validation.
+- Pydantic models ensure request data is structured and validated.
+- In-memory storage is useful for prototyping; for real apps, use a database.
+
+Example usage:
+POST /user with {"name": "Alice", "age": 25} → stores user
+GET /user/Alice → returns {"name": "Alice", "age": 25}
+
+Run the server:
+```
+uvicorn day4.day4:app --reload
+```
+
+You can now build and test your own API endpoints!
