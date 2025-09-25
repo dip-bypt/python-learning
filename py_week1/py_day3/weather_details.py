@@ -1,3 +1,4 @@
+import json
 import requests
 
 BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?'
@@ -16,7 +17,10 @@ print(response.json()) # convert the response to JSON format
 if response.status_code == 200:
     try: # handle try and exception for error handling
         data = response.json()
-        weatherData = data['current']
+        open('weather_details.json', 'w').write(json.dumps(data)) # write the data to a json file
+        read_data = open('weather_details.json', 'r') # read the data from the json file
+        jsonLoaded = json.load(read_data) # load the data from the json file
+        weatherData = jsonLoaded['current']
         temperature = weatherData['temp_c']
         humidity = weatherData['humidity']
         pressure = weatherData['pressure_mb']
