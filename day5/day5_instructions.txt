@@ -1,0 +1,42 @@
+Day 5: FastAPI User API - Instructions
+
+Objective:
+Build and test a FastAPI application that allows you to add users and fetch user information using REST API endpoints.
+
+Steps:
+
+1. Ensure your virtual environment is activated:
+   - On macOS/Linux: `source ai-env/bin/activate`
+   - On Windows: `ai-env\Scripts\activate`
+
+2. Install required libraries (if not already installed):
+   - `pip install fastapi uvicorn pydantic`
+
+3. Review the code in `day5/day5.py`:
+   - The code defines a FastAPI app with two endpoints:
+     - `POST /user` to add a user (expects JSON: `{ "name": "Alice", "age": 25 }`)
+     - `GET /user/{name}` to fetch user info by name
+   - Users are stored in memory (dictionary) for this example.
+   - The code uses Pydantic models for data validation and response formatting.
+
+4. Run the FastAPI server:
+   - `uvicorn day5.day5:app --reload`
+   - The server will start at `http://127.0.0.1:8000`
+
+5. Test the API endpoints:
+   - Use a tool like curl, httpie, Postman, or your browser.
+   - Example to add a user:
+     ```
+     curl -X POST "http://127.0.0.1:8000/user" -H "Content-Type: application/json" -d '{"name": "Alice", "age": 25}'
+     ```
+   - Example to fetch a user:
+     ```
+     curl "http://127.0.0.1:8000/user/Alice"
+     ```
+
+6. Understanding:
+   - FastAPI makes it easy to build APIs with automatic validation and documentation.
+   - In-memory storage is for demonstration; use a database for real applications.
+   - The OpenAPI docs are available at `http://127.0.0.1:8000/docs` for interactive testing.
+
+You have now built and tested a simple REST API with FastAPI!
