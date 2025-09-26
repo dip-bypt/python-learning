@@ -1,0 +1,41 @@
+Day 6: FastAPI + SQLite To-Do API - Instructions
+
+Objective:
+Build a FastAPI application that uses SQLite to store and manage a to-do list. Practice creating tables, inserting rows, and integrating a database with API endpoints.
+
+Steps:
+
+1. Ensure your virtual environment is activated:
+   - On macOS/Linux: `source ai-env/bin/activate`
+   - On Windows: `ai-env\Scripts\activate`
+
+2. Install required libraries (if not already installed):
+   - `pip install fastapi uvicorn pydantic`
+
+3. Review the code in `day6/day6.py`:
+   - The code creates a SQLite database (`todo.db`) and a `tasks` table if not present.
+   - Two endpoints are provided:
+     - `POST /task` to add a new task (expects JSON: `{ "description": "Buy milk" }`)
+     - `GET /tasks` to list all tasks
+
+4. Run the FastAPI server:
+   - `uvicorn day6.day6:app --reload`
+   - The server will start at `http://127.0.0.1:8000`
+
+5. Demo API Usage:
+   - Add a new task:
+     ```
+     curl -X POST "http://127.0.0.1:8000/task" -H "Content-Type: application/json" -d '{"description": "Buy milk"}'
+     ```
+   - List all tasks:
+     ```
+     curl "http://127.0.0.1:8000/tasks"
+     ```
+   - You can also use Postman or the interactive docs at `http://127.0.0.1:8000/docs`.
+
+6. Understanding:
+   - The app uses Python's built-in `sqlite3` module for database operations.
+   - All data is stored in `day6/todo.db`.
+   - FastAPI provides automatic validation and interactive API docs.
+
+You have now built and tested a simple To-Do API with FastAPI and SQLite!
