@@ -11,8 +11,8 @@ class Book(BaseModel):
 
 
 def init_db():
-    conn = sqlite3.connect("books.db")
-    cur = conn.cursor()
+    conn = sqlite3.connect("books.db")  # Connect to SQLite database (creates file if not exists)
+    cur = conn.cursor() # Create a cursor object to execute SQL commands. Return a cursor for the connection.
     cur.execute("""
         CREATE TABLE IF NOT EXISTS books (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,9 +20,9 @@ def init_db():
             author TEXT NOT NULL,
             year INTEGER NOT NULL
         )
-    """)
-    conn.commit()
-    conn.close()
+    """) # Create the books table if it doesn't exist. Executes an SQL statement.
+    conn.commit() # Commit any pending transaction to the database.
+    conn.close() # Close the database connection.
 
 init_db()
 
