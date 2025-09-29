@@ -30,8 +30,10 @@ class TestPyDay5(unittest.TestCase):
         response = self.client.get("/user/a@b.com")
         self.assertEqual(response.status_code, 200)
         resp_json = response.json()
-        self.assertTrue(resp_json["success"])
-        self.assertEqual(resp_json["user"]["email"], "a@b.com")
+        # Now the response is just the user fields
+        self.assertEqual(resp_json["email"], "a@b.com")
+        self.assertEqual(resp_json["name"], "Alice")
+        self.assertEqual(resp_json["age"], 25)
 
     def test_get_user_not_found(self):
         response = self.client.get("/user/unknown@b.com")
@@ -40,4 +42,3 @@ class TestPyDay5(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

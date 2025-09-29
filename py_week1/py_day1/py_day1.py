@@ -24,22 +24,26 @@ Command:
 import sys
 import subprocess
 
-# Print the current Python version
-print("Python version:", sys.version)
+def main():
+    # Print the current Python version
+    print("Python version:", sys.version)
 
-print("\nInstalled packages:")
+    print("\nInstalled packages:")
 
-try:
-    # Run "python -m pip list" and capture the output
-    result = subprocess.run(
-        [sys.executable, "-m", "pip", "list"],
-        capture_output=True,   # Capture the command output
-        text=True              # Decode output as string (instead of bytes)
-    )
+    try:
+        # Run "python -m pip list" and capture the output
+        result = subprocess.run(
+            [sys.executable, "-m", "pip", "list"],
+            capture_output=True,   # Capture the command output
+            text=True              # Decode output as string (instead of bytes)
+        )
 
-    # Print the list of installed packages
-    print(result.stdout)
+        # Print the list of installed packages
+        print(result.stdout)
 
-except Exception as e:
-    # In case something goes wrong, print the error
-    print(f"Error getting package list: {e}")
+    except Exception as e:
+        # In case something goes wrong, print the error
+        print(f"Error getting package list: {e}")
+
+if __name__ == "__main__":
+    main()

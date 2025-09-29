@@ -28,12 +28,7 @@ async def create_user(user: User):
 
 @API.get('/user/{email}', response_model=User)
 async def get_user(email: str):
-    user = users_db.get(email)  # Return the value for key if key is in the dictionary, else default.
+    user = users_db.get(email)
     if not user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
-    return {
-        "status": status.HTTP_200_OK,
-        "success": True,
-        "message": "User fetched successfully",
-        "user": user
-    }
+    return user

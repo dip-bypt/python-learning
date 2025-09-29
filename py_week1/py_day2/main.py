@@ -29,19 +29,23 @@ How to Run:
 
 import csv  # CSV module helps us read/write CSV files easily
 
-# Step 1: Open and read the CSV file
-with open("students.csv", mode="r") as file:
-    reader = csv.DictReader(file)
-    # DictReader reads each row as a dictionary, e.g. {"name": "Alice", "age": "17"}
+def main():
+    # Step 1: Open and read the CSV file
+    with open("students.csv", mode="r") as file:
+        reader = csv.DictReader(file)
+        # DictReader reads each row as a dictionary, e.g. {"name": "Alice", "age": "17"}
 
-    # Step 2: Convert reader object into a list of dictionaries
-    students = list(reader)
+        # Step 2: Convert reader object into a list of dictionaries
+        students = list(reader)
 
-# Step 3: Use list comprehension to get names of students older than 18
-# Note: int(row["age"]) converts the "age" string into an integer
-older_students = [row["name"] for row in students if int(row["age"]) > 18]
+    # Step 3: Use list comprehension to get names of students older than 18
+    # Note: int(row["age"]) converts the "age" string into an integer
+    older_students = [row["name"] for row in students if int(row["age"]) > 18]
 
-# Step 4: Print the result
-print("Students older than 18:")
-for name in older_students:
-    print("-", name)
+    # Step 4: Print the result
+    print("Students older than 18:")
+    for name in older_students:
+        print("-", name)
+
+if __name__ == "__main__":
+    main()

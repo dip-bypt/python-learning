@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="books">
+<dataSource name=".coverage">
   <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.53">
     <root id="1">
       <ServerVersion>3.45.1</ServerVersion>
@@ -499,7 +499,7 @@
     <routine id="190" parent="1" name="fts5"/>
     <schema id="191" parent="1" name="main">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2025-09-26.12:19:28</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-09-29.06:13:34</LastIntrospectionLocalTimestamp>
     </schema>
     <argument id="192" parent="16">
       <ArgumentDirection>R</ArgumentDirection>
@@ -1590,62 +1590,189 @@
     <argument id="554" parent="190">
       <Position>1</Position>
     </argument>
-    <table id="555" parent="191" name="books"/>
-    <table id="556" parent="191" name="sqlite_master">
+    <table id="555" parent="191" name="arc"/>
+    <table id="556" parent="191" name="context"/>
+    <table id="557" parent="191" name="coverage_schema"/>
+    <table id="558" parent="191" name="file"/>
+    <table id="559" parent="191" name="line_bits"/>
+    <table id="560" parent="191" name="meta"/>
+    <table id="561" parent="191" name="sqlite_master">
       <System>1</System>
     </table>
-    <table id="557" parent="191" name="sqlite_sequence">
-      <System>1</System>
-    </table>
-    <column id="558" parent="555" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <table id="562" parent="191" name="tracer"/>
+    <column id="563" parent="555" name="file_id">
       <Position>1</Position>
-      <StoredType>INTEGER|0s</StoredType>
+      <StoredType>integer|0s</StoredType>
     </column>
-    <column id="559" parent="555" name="title">
-      <NotNull>1</NotNull>
+    <column id="564" parent="555" name="context_id">
       <Position>2</Position>
-      <StoredType>TEXT|0s</StoredType>
+      <StoredType>integer|0s</StoredType>
     </column>
-    <column id="560" parent="555" name="author">
-      <NotNull>1</NotNull>
+    <column id="565" parent="555" name="fromno">
       <Position>3</Position>
-      <StoredType>TEXT|0s</StoredType>
+      <StoredType>integer|0s</StoredType>
     </column>
-    <column id="561" parent="555" name="year">
-      <NotNull>1</NotNull>
+    <column id="566" parent="555" name="tono">
       <Position>4</Position>
-      <StoredType>INTEGER|0s</StoredType>
+      <StoredType>integer|0s</StoredType>
     </column>
-    <key id="562" parent="555">
+    <foreign-key id="567" parent="555">
+      <ColNames>file_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>file</RefTableName>
+    </foreign-key>
+    <foreign-key id="568" parent="555">
+      <ColNames>context_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>context</RefTableName>
+    </foreign-key>
+    <index id="569" parent="555" name="sqlite_autoindex_arc_1">
+      <ColNames>file_id
+context_id
+fromno
+tono</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="570" parent="555">
+      <ColNames>file_id
+context_id
+fromno
+tono</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_arc_1</UnderlyingIndexName>
+    </key>
+    <column id="571" parent="556" name="id">
+      <Position>1</Position>
+      <StoredType>integer|0s</StoredType>
+    </column>
+    <column id="572" parent="556" name="context">
+      <Position>2</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <index id="573" parent="556" name="sqlite_autoindex_context_1">
+      <ColNames>context</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="574" parent="556">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="563" parent="556" name="type">
+    <key id="575" parent="556">
+      <ColNames>context</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_context_1</UnderlyingIndexName>
+    </key>
+    <column id="576" parent="557" name="version">
+      <Position>1</Position>
+      <StoredType>integer|0s</StoredType>
+    </column>
+    <column id="577" parent="558" name="id">
+      <Position>1</Position>
+      <StoredType>integer|0s</StoredType>
+    </column>
+    <column id="578" parent="558" name="path">
+      <Position>2</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <index id="579" parent="558" name="sqlite_autoindex_file_1">
+      <ColNames>path</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="580" parent="558">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="581" parent="558">
+      <ColNames>path</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_file_1</UnderlyingIndexName>
+    </key>
+    <column id="582" parent="559" name="file_id">
+      <Position>1</Position>
+      <StoredType>integer|0s</StoredType>
+    </column>
+    <column id="583" parent="559" name="context_id">
+      <Position>2</Position>
+      <StoredType>integer|0s</StoredType>
+    </column>
+    <column id="584" parent="559" name="numbits">
+      <Position>3</Position>
+      <StoredType>blob|0s</StoredType>
+    </column>
+    <foreign-key id="585" parent="559">
+      <ColNames>file_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>file</RefTableName>
+    </foreign-key>
+    <foreign-key id="586" parent="559">
+      <ColNames>context_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>context</RefTableName>
+    </foreign-key>
+    <index id="587" parent="559" name="sqlite_autoindex_line_bits_1">
+      <ColNames>file_id
+context_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="588" parent="559">
+      <ColNames>file_id
+context_id</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_line_bits_1</UnderlyingIndexName>
+    </key>
+    <column id="589" parent="560" name="key">
+      <Position>1</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <column id="590" parent="560" name="value">
+      <Position>2</Position>
+      <StoredType>text|0s</StoredType>
+    </column>
+    <index id="591" parent="560" name="sqlite_autoindex_meta_1">
+      <ColNames>key</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Unique>1</Unique>
+    </index>
+    <key id="592" parent="560">
+      <ColNames>key</ColNames>
+      <UnderlyingIndexName>sqlite_autoindex_meta_1</UnderlyingIndexName>
+    </key>
+    <column id="593" parent="561" name="type">
       <Position>1</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="564" parent="556" name="name">
+    <column id="594" parent="561" name="name">
       <Position>2</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="565" parent="556" name="tbl_name">
+    <column id="595" parent="561" name="tbl_name">
       <Position>3</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="566" parent="556" name="rootpage">
+    <column id="596" parent="561" name="rootpage">
       <Position>4</Position>
       <StoredType>INT|0s</StoredType>
     </column>
-    <column id="567" parent="556" name="sql">
+    <column id="597" parent="561" name="sql">
       <Position>5</Position>
       <StoredType>TEXT|0s</StoredType>
     </column>
-    <column id="568" parent="557" name="name">
+    <column id="598" parent="562" name="file_id">
       <Position>1</Position>
+      <StoredType>integer|0s</StoredType>
     </column>
-    <column id="569" parent="557" name="seq">
+    <column id="599" parent="562" name="tracer">
       <Position>2</Position>
+      <StoredType>text|0s</StoredType>
     </column>
+    <foreign-key id="600" parent="562">
+      <ColNames>file_id</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>file</RefTableName>
+    </foreign-key>
+    <key id="601" parent="562">
+      <ColNames>file_id</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

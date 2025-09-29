@@ -4,6 +4,7 @@ import builtins
 import sys
 import os
 import json
+from py_week1.py_day3 import weather_details
 
 class TestWeatherDetails(unittest.TestCase):
     @patch('requests.get')
@@ -28,11 +29,7 @@ class TestWeatherDetails(unittest.TestCase):
         handle = mock_file()
         handle.read.return_value = json.dumps(mock_response.json.return_value)
         # Run script
-        import importlib
-        if 'weather_details' in sys.modules:
-            importlib.reload(sys.modules['weather_details'])
-        else:
-            import weather_details
+        weather_details.main()
         # Check print calls for temperature and humidity
         calls = [str(call) for call in mock_print.call_args_list]
         self.assertTrue(any('Temperature: 30 C' in c for c in calls))
@@ -50,11 +47,7 @@ class TestWeatherDetails(unittest.TestCase):
         mock_get.return_value = mock_response
         handle = mock_file()
         handle.read.return_value = json.dumps({})
-        import importlib
-        if 'weather_details' in sys.modules:
-            importlib.reload(sys.modules['weather_details'])
-        else:
-            import weather_details
+        weather_details.main()
         calls = [str(call) for call in mock_print.call_args_list]
         self.assertTrue(any('Error: Key not found' in c for c in calls))
 
@@ -65,14 +58,9 @@ class TestWeatherDetails(unittest.TestCase):
         mock_response = MagicMock()
         mock_response.status_code = 404
         mock_get.return_value = mock_response
-        import importlib
-        if 'weather_details' in sys.modules:
-            importlib.reload(sys.modules['weather_details'])
-        else:
-            import weather_details
+        weather_details.main()
         calls = [str(call) for call in mock_print.call_args_list]
         self.assertTrue(any('Error in the HTTP request' in c for c in calls))
 
 if __name__ == '__main__':
     unittest.main()
-
