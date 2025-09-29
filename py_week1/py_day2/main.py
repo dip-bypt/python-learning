@@ -30,7 +30,7 @@ How to Run:
 import csv  # CSV module helps us read/write CSV files easily
 
 # Step 1: Open and read the CSV file
-with open("py_day2/students.csv", mode="r") as file:
+with open("students.csv", mode="r") as file:
     reader = csv.DictReader(file)
     # DictReader reads each row as a dictionary, e.g. {"name": "Alice", "age": "17"}
 
