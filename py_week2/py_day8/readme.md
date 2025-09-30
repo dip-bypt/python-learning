@@ -78,3 +78,29 @@ curl -X POST "http://127.0.0.1:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{"text": "I love learning FastAPI and Python!"}'
 ```
+
+## Testing
+
+Automated test cases are provided to verify both the sentiment analysis pipeline and the FastAPI API endpoint.
+
+### How to Run Tests
+1. Install the required testing packages (if not already installed):
+   ```bash
+   pip install pytest httpx
+   ```
+2. Run the tests from the `py_day8` directory:
+   ```bash
+   pytest test_main.py
+   ```
+
+### Code Coverage (Optional)
+To generate a code coverage report in HTML format:
+1. Install coverage tools:
+   ```bash
+   pip install pytest-cov
+   ```
+2. Run with coverage:
+   ```bash
+   pytest --cov=main --cov-report=html:htmlcov
+   ```
+   The coverage report will be available in the `htmlcov` directory.
