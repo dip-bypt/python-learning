@@ -1,0 +1,25 @@
+Day 8: Sentiment Analysis with Hugging Face Transformers
+
+Steps to complete this task:
+
+1. Install the required library:
+   pip install transformers
+
+2. Understand the code:
+   - The script uses Hugging Face's `pipeline` to load a pre-trained sentiment analysis model.
+   - It analyzes a list of custom sentences and prints out the sentiment (POSITIVE/NEGATIVE) and confidence score.
+
+3. Run the script:
+   python day8_sentiment.py
+
+4. Observe the output:
+   - For each sentence, you'll see the sentiment label and how confident the model is.
+
+Learning Points:
+- Hugging Face's `pipeline` makes it easy to use powerful NLP models with just a few lines of code.
+- Sentiment analysis is a common NLP task to determine if text expresses positive or negative feelings.
+- You can try your own sentences by editing the `sentences` list in the script.
+
+Extra:
+- Explore other pipelines like `summarization` or `translation` by changing the pipeline type.
+- Learn more at: https://huggingface.co/docs/transformers/main_classes/pipelines
