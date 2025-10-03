@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f158ca2-fca3-4b4a-b57f-5c8e7168154b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/py_day8/test_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py_day9/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py_day9/pipeline_api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/py_day9/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +109,9 @@
       <workItem from="1759213006493" duration="586000" />
       <workItem from="1759214873915" duration="1938000" />
       <workItem from="1759221631363" duration="7036000" />
+      <workItem from="1759293619392" duration="5608000" />
+      <workItem from="1759318743946" duration="2431000" />
+      <workItem from="1759467135460" duration="2632000" />
     </task>
     <servers />
   </component>
