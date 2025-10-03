@@ -1,0 +1,33 @@
+Day 10: Expose Hugging Face Sentiment Model with FastAPI
+
+Objective:
+Build a FastAPI API that exposes a Hugging Face sentiment analysis model. The API should accept JSON input, run inference, and return the result as JSON.
+
+Steps:
+1. Ensure your virtual environment is activated:
+   - On macOS/Linux: `source ai-env/bin/activate`
+   - On Windows: `ai-env\Scripts\activate`
+
+2. Install required libraries (if not already installed):
+   pip install fastapi uvicorn pydantic transformers
+
+3. Review the code in `day10/day10.py`:
+   - Loads the Hugging Face sentiment analysis pipeline at startup.
+   - Defines a POST endpoint `/analyze` that accepts JSON `{ "text": "..." }`.
+   - Returns the sentiment label and score as JSON.
+
+4. Run the FastAPI server:
+   uvicorn day10.day10:app --reload
+   - The server will start at `http://127.0.0.1:8000`
+
+5. Test the API:
+   - Example with curl:
+     curl -X POST "http://127.0.0.1:8000/analyze" -H "Content-Type: application/json" -d '{"text": "I love learning Python!"}'
+   - Or use Postman or the interactive docs at `http://127.0.0.1:8000/docs`
+
+Learning Points:
+- You can easily expose any Hugging Face model as an API with FastAPI.
+- The pipeline is loaded once for efficiency.
+- FastAPI automatically generates OpenAPI docs for easy testing.
+
+Try analyzing different texts and see the results!
