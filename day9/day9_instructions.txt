@@ -1,0 +1,28 @@
+Day 9: Summarization with Hugging Face Transformers
+
+Objective:
+Learn to use Hugging Face's `transformers` library to summarize a Wikipedia article using a pre-trained model from the model hub.
+
+Steps:
+1. Install required libraries (if not already installed):
+   pip install transformers requests
+
+2. Review the code in `day9/day9.py`:
+   - Loads the summarization pipeline with the "facebook/bart-large-cnn" model.
+   - Fetches a Wikipedia article using the Wikipedia REST API.
+   - Summarizes the article in 2 sentences.
+   - Prints both the original and summarized text.
+
+3. Run the script:
+   python day9/day9.py
+
+4. Change the topic (optional):
+   - Edit the Wikipedia API URL in the script, e.g.:
+     https://en.wikipedia.org/api/rest_v1/page/summary/Artificial_intelligence
+
+Learning Points:
+- Hugging Face pipelines make it easy to use state-of-the-art NLP models.
+- You can load any model from the Hugging Face model hub by specifying its name.
+- Wikipedia's REST API provides a simple way to fetch article summaries for NLP tasks.
+
+Try summarizing different articles and experiment with the summarizer's parameters!
