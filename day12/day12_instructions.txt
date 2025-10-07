@@ -1,0 +1,24 @@
+Day 12: Sentiment Analysis on IMDB Reviews with Hugging Face
+
+Objective:
+Use the Hugging Face `datasets` and `transformers` libraries to perform sentiment analysis on random IMDB movie reviews.
+
+Steps:
+1. Install required libraries (if not already installed):
+   pip install datasets transformers 
+
+2. Review the code in `day12/day12_imdb_sentiment.py`:
+   - Loads the IMDB dataset using Hugging Face's `datasets` library.
+   - Selects 5 random reviews from the training set.
+   - Loads the sentiment analysis pipeline from Hugging Face.
+   - Analyzes each review and prints the predicted sentiment and score.
+
+3. Run the script:
+   python day12/day12_imdb_sentiment.py
+
+Learning Points:
+- The IMDB dataset is a popular benchmark for sentiment analysis.
+- Hugging Face pipelines make it easy to apply pre-trained models to real-world data.
+- Random sampling allows you to test the model on different reviews each time.
+
+Try changing the number of samples or the pipeline model to experiment further!
