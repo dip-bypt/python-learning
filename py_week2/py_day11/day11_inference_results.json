@@ -1,0 +1,502 @@
+[
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 85.797
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 32.09
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 9.694
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 24.474
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 22.092
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 10.988
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 13.43
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 10.78
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 13.042
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 12.845
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 11.672
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 14.896
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 11.832
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 13.439
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 12.795
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 12.134
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 17.535
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 14.043
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 13.645
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 13.28
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 12.133
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 15.296
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 10.277
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 11.443
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 10.842
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 10.319
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 12.706
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 10.204
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 11.59
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 11.521
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 10.771
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 13.056
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 10.45
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 12.034
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 11.9
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 11.084
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 14.19
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 11.744
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 13.416
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 13.442
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 12.422
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 15.311
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 12.336
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 13.876
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 13.527
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I love this product!",
+    "inference_time_ms": 12.376
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 15.279
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 10.418
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 11.503
+  },
+  {
+    "model": "bert-base-uncased",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 10.983
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 9.286
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 7.192
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 6.535
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 6.916
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 7.008
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 6.608
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 7.339
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 6.844
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 7.018
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 7.261
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 7.557
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 7.973
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 7.68
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 7.573
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 10.008
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 7.577
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 8.616
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 7.572
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.059
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.179
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 7.644
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 8.517
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 7.643
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 7.96
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.165
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 7.89
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 8.723
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 8.156
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.23
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.748
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 8.251
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 8.844
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 8.222
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.364
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.8
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 8.332
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 8.846
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 8.299
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.428
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.995
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 8.538
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 9.013
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 8.591
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.686
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 8.976
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I love this product!",
+    "inference_time_ms": 8.802
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "This is the worst movie I've ever seen.",
+    "inference_time_ms": 9.285
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "Transformers library is amazing!",
+    "inference_time_ms": 8.765
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "I am not happy with this service.",
+    "inference_time_ms": 8.809
+  },
+  {
+    "model": "distilbert-base-uncased-finetuned-sst-2-english",
+    "sentence": "The weather today is lovely.",
+    "inference_time_ms": 9.342
+  }
+]
