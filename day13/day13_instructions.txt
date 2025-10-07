@@ -1,0 +1,17 @@
+Day 13: Custom FastAPI Project & Review
+
+Objective:
+Apply your Python, FastAPI, and Hugging Face skills to build, test, and document a custom API or data science project. Review concepts from previous days and ensure your code is well-documented for learning and sharing.
+
+Steps:
+1. Choose a project or API to build (e.g., sentiment analysis, data summarization, etc.).
+2. Structure your code with clear comments explaining each step and its purpose.
+3. Test your API or script to ensure it works as expected.
+4. Document your code and workflow for future reference or sharing.
+
+Learning Points:
+- Good documentation and comments make your code easier to understand and maintain.
+- Reviewing and applying concepts from previous days helps reinforce your learning.
+- Custom projects allow you to experiment and showcase your skills.
+
+Try extending your project with new features, endpoints, or models to deepen your understanding!
