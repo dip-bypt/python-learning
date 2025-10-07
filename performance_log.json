@@ -1,0 +1,14 @@
+{
+    "model_performance": [
+        {
+            "model": "BERT",
+            "total_inference_time_sec": 0.86,
+            "average_time_per_sentence_sec": 0.0171
+        },
+        {
+            "model": "DistilBERT",
+            "total_inference_time_sec": 0.47,
+            "average_time_per_sentence_sec": 0.0095
+        }
+    ]
+}

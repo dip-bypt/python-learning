@@ -1,0 +1,25 @@
+Day 11: Model Performance Comparison with Hugging Face Transformers
+
+Objective:
+Compare the inference performance of two Hugging Face sentiment analysis models (BERT and DistilBERT) on a set of sample sentences, and log the results.
+
+Steps:
+1. Install required libraries (if not already installed):
+   pip install transformers
+
+2. Review the code in `day11/day11.py`:
+   - Prepares 50 sample sentences for testing.
+   - Loads two sentiment analysis pipelines: BERT and DistilBERT.
+   - Measures total and average inference time for each model.
+   - Logs results in a dictionary and saves to `performance_log.json`.
+   - Prints a summary of the comparison.
+
+3. Run the script:
+   python day11/day11.py
+
+Learning Points:
+- You can compare different NLP models for speed and efficiency using Python.
+- BERT and DistilBERT are popular models for sentiment analysis; DistilBERT is faster and lighter.
+- Saving results to JSON makes it easy to analyze and share performance data.
+
+Try changing the number of sentences or models to see how performance varies!
