@@ -42,3 +42,4 @@ build/
 # Misc
 *.swp
 *.swo
+.env

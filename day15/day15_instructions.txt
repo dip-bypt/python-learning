@@ -1,0 +1,28 @@
+Day 15: LangChain + OpenRouter (ChatOpenAI) — Instructions
+
+Objective:
+Learn how to use LangChain to run a conversational/text-generation model via OpenRouter's ChatOpenAI wrapper.
+
+What this example does:
+- Defines a prompt template with an input variable (`sentence`).
+- Initializes the ChatOpenAI client (OpenRouter) using an API key from an environment variable.
+- Creates an LLMChain and runs it once to rewrite a sentence politely.
+
+Setup steps:
+1. Create and activate your virtual environment (if not already done):
+   python3 -m venv ai-env
+   source ai-env/bin/activate
+
+2. Install dependencies:
+   pip install langchain langchain-community openai
+
+3. Set your OpenRouter API key in the environment (do NOT hard-code it):
+   export OPENROUTER_API_KEY="sk-...your key..."
+
+4. Run the script:
+   python day15/day15.py
+
+Notes:
+- Replace the `model_name` with any model you have access to via OpenRouter.
+- Lower `temperature` for deterministic output, raise it for more creative responses.
+- For production, avoid printing raw outputs; integrate proper logging and error handling.
