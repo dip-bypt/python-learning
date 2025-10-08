@@ -20,7 +20,7 @@ API.add_middleware(
 # -----------------------------
 # Load Hugging Face model
 # -----------------------------
-sentiment_model = pipeline("sentiment-analysis")
+sentiment_model = pipeline("sentiment-analysis", model="finiteautomata/bertweet-base-sentiment-analysis")
 
 class TextRequest(BaseModel):
     text: str
