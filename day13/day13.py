@@ -24,7 +24,9 @@ app.add_middleware(
 # 3️⃣ Define request model using Pydantic
 class TextRequest(BaseModel):
     text: str
-
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)), reload=True)
 # 4️⃣ Load Hugging Face sentiment model
 sentiment_analyzer = pipeline("sentiment-analysis")
 
