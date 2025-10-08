@@ -41,4 +41,3 @@ def test_predict_sentiment():
     result = response.json()
     assert "sentiment" in result
     assert 0.0 <= result["confidence"] <= 1.0
-

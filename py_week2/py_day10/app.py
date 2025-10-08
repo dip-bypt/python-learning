@@ -20,10 +20,8 @@ from transformers import pipeline
 API = FastAPI(title="Day 10 - Sentiment Analysis API")
 
 # -----------------------------
-
 # Load Hugging Face Sentiment Pipeline
 # -----------------------------
-# Using a lightweight, efficient model for fast inference
 sentiment_model = pipeline("sentiment-analysis")
 
 # -----------------------------
@@ -48,3 +46,4 @@ def analyze_text(req: TextRequest):
     label = result[0]["label"]
     score = result[0]["score"]
     return {"text": req.text, "sentiment": label, "confidence": score}
+
