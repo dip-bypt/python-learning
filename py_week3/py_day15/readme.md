@@ -45,6 +45,13 @@ This project demonstrates the fundamentals of using LangChain with LLMs (Large L
 - Lists all required Python packages:
   - `fastapi`, `uvicorn`, `langchain`, `openai`, `python-dotenv`, `langchain_community`, `langchain-openai`
 
+### test_main.py
+- Contains automated test cases for the FastAPI app using `pytest` and `TestClient`.
+- Tests include:
+  - Root endpoint (`/`) returns API status message.
+  - `/rewrite` endpoint works for valid, empty, missing, and invalid input.
+  - Ensures robust error handling and correct API responses.
+
 ---
 
 ## How to Run
@@ -63,12 +70,26 @@ This project demonstrates the fundamentals of using LangChain with LLMs (Large L
 
 ---
 
+## How to Run Test Cases
+1. **Install test dependencies (if not already installed):**
+   ```bash
+   pip install pytest httpx
+   ```
+2. **Run all test cases:**
+   ```bash
+   pytest py_day15/test_main.py --maxfail=3 --disable-warnings -v
+   ```
+   - This will execute all tests in `test_main.py` and show detailed results.
+   - Tests cover both normal and edge cases for the API endpoints.
+
+---
+
 ## References
 - [LangChain Documentation](https://python.langchain.com/)
 - [OpenAI API](https://platform.openai.com/docs/api-reference/introduction)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [pytest Documentation](https://docs.pytest.org/en/stable/)
 
 ---
 
 *This project is part of Week 3, Day 15 of the LangChain learning series.*
-
