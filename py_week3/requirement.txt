@@ -5,3 +5,5 @@ openai
 python-dotenv
 langchain_community
 langchain-openai
+pypdf
+python-multipart
