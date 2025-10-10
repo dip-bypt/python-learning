@@ -17,14 +17,14 @@ from langchain_community.chat_models import ChatOpenAI
 
 
 # Try to load a local .env file first (useful for local development).
-# If `.env` is not present, try `.env.example` as a fallback so users can run
+# If `.env` is not present, try `.env` as a fallback so users can run
 # quickly if they placed the key there. This requires python-dotenv, but we
 # gracefully continue if it's not installed.
 try:
     from dotenv import load_dotenv
     base = os.path.dirname(__file__)
     env_path = os.path.join(base, ".env")
-    example_path = os.path.join(base, ".env.example")
+    example_path = os.path.join(base, ".env")
     if os.path.isfile(env_path):
         load_dotenv(env_path)
         print(f"Loaded environment from {env_path}")
