@@ -1,7 +1,7 @@
 import os
 import pytest
 from unittest.mock import patch, MagicMock
-from main import extract_text_and_tables, create_chunks, create_vector_store, create_chatbot
+from py_day20.main import extract_text_and_tables, create_chunks, create_vector_store, create_chatbot
 
 def setup_vector_store_and_chatbot():
     pdf_path = "py_day20/school_student_report.pdf"
@@ -37,4 +37,3 @@ def test_manav_ambiguous():
     # Now disambiguate
     answer2 = ask_chatbot(chatbot, "Manav Desai!")
     assert "91.96" in answer2 and "Manav Desai" in answer2
-

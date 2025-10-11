@@ -65,4 +65,3 @@ def test_qa_endpoint_missing_session_id():
     result = resp.json()
     assert result["session_id"] == "default"
     assert isinstance(result["answer"], str)
-

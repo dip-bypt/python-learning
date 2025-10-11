@@ -2,7 +2,7 @@ import os
 import tempfile
 import pytest
 from fastapi.testclient import TestClient
-from main import app
+from py_day21.main import app
 
 client = TestClient(app)
 
@@ -40,4 +40,3 @@ def test_upload_pdf_and_ask():
     assert "France" in resp2.json()["question"]
     # The answer may vary depending on LLM, so just check answer is present
     assert resp2.json()["answer"]
-

@@ -44,4 +44,3 @@ def test_analyze_text_long():
     assert result["original_text"] == long_text
     assert isinstance(result["summary"], str)
     assert isinstance(result["keywords"], list)
-

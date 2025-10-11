@@ -50,4 +50,3 @@ def test_summarize_pdf_empty_pdf():
 def test_summarize_pdf_missing_file():
     response = client.post("/summarize-pdf", files={})
     assert response.status_code == 422
-
