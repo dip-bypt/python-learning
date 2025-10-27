@@ -1,0 +1,5 @@
+[2025-10-27 12:46:02] / → Root endpoint called
+[2025-10-27 13:06:38] /status: Status endpoint called successfully.
+[2025-10-27 13:07:15] /greet/Mohit: Greeted user: Mohit
+[2025-10-27 13:07:45] /process: Data processing initiated.
+[2025-10-27 13:10:07] /: Root endpoint called
